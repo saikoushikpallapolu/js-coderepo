@@ -27,3 +27,15 @@ console.log(Object.entries(obj4)); // array of arrays of the key-value pairs.
 console.log(obj4.hasOwnProperty('3')); // true
 console.log(obj4.hasOwnProperty('7')); // false
 
+// Destructing an Object //
+
+const user={
+    name : "Koushik",
+    amount : 999,
+    place : "Hyderabad"
+}
+
+const {name: n}=user; // Destructuring
+console.log(n); // prints Koushik.
+
+// json- "Java Script Object Notation", whenever we call the url of an api, the data is present in the form of a object itself or an array of objects.
